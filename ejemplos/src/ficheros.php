@@ -1,5 +1,5 @@
 <?php
-const UPLOAD_DIR = '/var/www/html/public/uploads/';
+const UPLOAD_DIR = __DIR__ . '/var/www/html/public/uploads/';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verificar si se ha subido un archivo

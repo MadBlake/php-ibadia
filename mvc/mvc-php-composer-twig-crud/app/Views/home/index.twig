@@ -1,0 +1,19 @@
+{% extends "layout.twig" %}
+{% block content %}
+<h1>{{ title }}</h1>
+{% for p in posts %}
+  <div class="card">
+    <h3><a href="/posts/{{ p.id }}">{{ p.title }}</a></h3>
+    <p>{{ p.body|nl2br }}</p>
+    <p>
+      <a href="/posts/{{ p.id }}/edit">Editar</a>
+    </p>
+    <form method="post" action="/posts/{{ p.id }}/delete" onsubmit="return confirm('¿Eliminar?');">
+      <input type="hidden" name="_csrf" value="{{ csrf_token|default('') }}">
+      <button type="submit">Eliminar</button>
+    </form>
+  </div>
+{% else %}
+  <p>No hay posts.</p>
+{% endfor %}
+{% endblock %}

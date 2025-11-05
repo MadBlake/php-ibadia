@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>DesignPatternsPHP – Web/Backend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css" id="theme">
+  <style>
+    :root {
+      --accent: #22c55e;
+      --text: #374151;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      color: var(--text);
+    }
+
+    .reveal .slides section {
+      border-top: 6px solid var(--accent);
+    }
+
+    .reveal table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .reveal table th,
+    .reveal table td {
+      border: 1px solid #ddd;
+      padding: .35rem;
+      font-size: .85em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>DesignPatternsPHP (ES) – Web/Backend</h1>
+        <p>Filtro temático + destacados</p>
+      </section>
+      <section>
+        <h2>Índice</h2>
+        <ul>
+          <li><a href="#/2">Patrones creacionales</a></li>
+          <li><a href="#/3">Patrones estructurales</a></li>
+          <li><a href="#/4">Patrones de comportamiento</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Patrones creacionales</h2>
+      </section>
+      <section>
+        <h3>Factory Method <small>(Creacional)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_018_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <]]
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+          Delega la creación a subclases mediante un método de fábrica.
+Cuándo usar: Cuando una clase no puede anticipar qué clase concreta debe crear
++ Desacopla creación de uso
+− Puede introducir jerarquías adicionales
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Singleton <small>(Creacional)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_030_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Patrones estructurales</h2>
+      </section>
+      <section>
+        <h3>Decorator <small>(Estructural)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_052_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Facade <small>(Estructural)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_059_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Proxy <small>(Estructural)</small> </h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_070_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Patrones de comportamiento</h2>
+      </section>
+      <section>
+        <h3>Command <small>(Comportamiento)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_081_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Observer <small>(Comportamiento)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_109_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Strategy <small>(Comportamiento)</small> <span
+            style="background:#ef4444;color:white;padding:.2rem .5rem;border-radius:.4rem;margin-left:.4rem;font-size:.8em;">MUY
+            USADO</span></h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_121_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Template Method <small>(Comportamiento)</small> </h3>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;"><img
+            src="designpatternsphp_uml_imgs/page_125_img_00.png"
+            style="max-height:420px;max-width:90%;object-fit:contain;display:block;margin:0.25rem auto;" /></div>
+        <h4>¿Cuándo usarlo?</h4>
+        <ul>
+          <li>Aplicable cuando el problema del patrón aparece en el diseño.</li>
+        </ul>
+        <div style="display:flex;gap:2rem;justify-content:center;">
+          <div>
+            <h4>Pros</h4>
+            <ul>
+              <li>Estructura y claridad.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contras</h4>
+            <ul>
+              <li>Puede añadir complejidad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Resumen comparativo (Web/Backend)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Patrón</th>
+              <th>Tipo</th>
+              <th>¿Cuándo usar?</th>
+              <th>Pro</th>
+              <th>Contra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>★ Factory Method</td>
+              <td>Creacional</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Singleton</td>
+              <td>Creacional</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Decorator</td>
+              <td>Estructural</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Facade</td>
+              <td>Estructural</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>Proxy</td>
+              <td>Estructural</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Command</td>
+              <td>Comportamiento</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Observer</td>
+              <td>Comportamiento</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>★ Strategy</td>
+              <td>Comportamiento</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+            <tr>
+              <td>Template Method</td>
+              <td>Comportamiento</td>
+              <td>Aplicable cuando el problema del patrón aparece en el diseño.…</td>
+              <td>Estructura y claridad.…</td>
+              <td>Puede añadir complejidad.…</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>Reveal.initialize({ hash: true });</script>
+</body>
+
+</html>

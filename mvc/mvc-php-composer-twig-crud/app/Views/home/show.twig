@@ -1,0 +1,6 @@
+{% extends "layout.twig" %}
+{% block content %}
+<h1>#{{ post.id }} — {{ post.title }}</h1>
+<p>{{ post.body|nl2br }}</p>
+<p><a href="/">← Volver</a></p>
+{% endblock %}

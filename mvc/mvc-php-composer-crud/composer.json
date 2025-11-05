@@ -1,0 +1,12 @@
+{
+  "name": "demo/mini-mvc-crud",
+  "description": "Mini MVC educativo con CRUD y validaci\u00f3n",
+  "type": "project",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core/",
+      "App\\": "app/"
+    }
+  }
+}

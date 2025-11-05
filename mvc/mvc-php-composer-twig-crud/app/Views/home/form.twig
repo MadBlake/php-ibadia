@@ -1,0 +1,20 @@
+{% extends "layout.twig" %}
+{% block content %}
+<h1>{{ title }}</h1>
+{% set v = old ?? {} %}
+{% if post is defined %}{% set v = post %}{% endif %}
+<form method="post" action="{{ post is defined ? '/posts/'~post.id~'/update' : '/posts' }}">
+  <input type="hidden" name="_csrf" value="{{ csrf }}">
+  <div>
+    <label>Título</label><br>
+    <input name="title" value="{{ v.title|default('') }}" maxlength="150">
+    {% if errors.title %}<div class="error">{{ errors.title|join(', ') }}</div>{% endif %}
+  </div>
+  <div>
+    <label>Contenido</label><br>
+    <textarea name="body" rows="6">{{ v.body|default('') }}</textarea>
+    {% if errors.body %}<div class="error">{{ errors.body|join(', ') }}</div>{% endif %}
+  </div>
+  <button type="submit">{{ post is defined ? 'Actualizar' : 'Crear' }}</button>
+</form>
+{% endblock %}
