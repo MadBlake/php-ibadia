@@ -1,2 +1,5 @@
 <?php
-return ['debug'=>true];
+return [
+    'debug' => true,
+    'use_memory_storage' => true,
+];

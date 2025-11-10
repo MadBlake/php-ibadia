@@ -1,0 +1,18 @@
+{
+  "name": "example/mvc-posts-comments",
+  "description": "Mini MVC con Composer para gestionar posts y comentarios (driver array/mysql)",
+  "type": "project",
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php -r \"file_exists('public/.htaccess') || copy('public/.htaccess.example', 'public/.htaccess');\""
+    ]
+  }
+}
