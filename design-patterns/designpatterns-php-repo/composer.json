@@ -1,0 +1,11 @@
+{
+  "name": "example/designpatterns-php",
+  "description": "Implementaciones originales de patrones de dise\u00f1o en PHP (inspiradas en DesignPatternsPHP ES)",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DesignPatterns\\": "src/"
+    }
+  },
+  "require": {}
+}
